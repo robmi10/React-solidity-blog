@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.base-container {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.newLink {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(154, 143, 248);
+    width: 10em;
+    height: 20;
+    text-decoration: none;
+    padding-left: 13;
+    box-shadow: 0px 0px 12px 2px rgba(255, 201, 255, 0.2);
+    cursor: pointer;
+    &:hover {
+      background-color: #f2e9f3;
+      text-decoration: none;
+    }
+    &:focus {
+      outline: none;
+    }
+}
+
+
+.image {
+    align-items: center;
+    width: 21em;
+    img{
+        width: 100%;
+        height: 50%;
+    }
+    align-items: center;
+    margin: auto;
+ 
+  
+}
+
+.form {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myChart {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:static;
+}
+
+
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    label{
+        font-size: 20px;
+    }
+}
+
+ input{
+    margin-top: 6px;
+    min-width: 5em;
+    height: 37px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #f3f3f3;
+ 
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: all 250ms ease-in-out;
+    &:focus{
+        outline: none;
+        box-shadow: 0px 0px 12px 0.8px #0e81ce96;
+    }
+}
+.footer{
+
+    margin-top: 3em;
+}
+
+
+
+.btn{
+    font-size: 21;
+    padding: 5px 20px;
+    border: 0;
+    background-color: #8bcfe0;
+    
+    color: #fafeff;
+    border-radius: 3px;
+    transition: all 250ms ease-in-out;
+    box-shadow: 0px 0px 12px 2px rgba(240, 177, 240, 0.2);
+    cursor: pointer;
+    &:hover{
+        background-color: #f6d8f7;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.transition-body{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+  }
+  
+
+.select{
+    margin-top: 6px;
+    min-width: 5em;
+    height: 37px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #f3f3f3;
+ 
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: all 250ms ease-in-out;
+    &:focus{
+        outline: none;
+        box-shadow: 0px 0px 12px 0.8px #0e81ce96;
+    }
+}
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}

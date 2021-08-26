@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+
+.myChart {
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.blog {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NavLink{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(182, 218, 224);
+  width: 10em;
+  height: 20;
+  background-color: rgb(83, 110, 233);
+  box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+  text-decoration: none;
+  
+  cursor: pointer;
+    &:hover {
+      background-color: #8754b3;
+    }
+    &:focus {
+      outline: none;
+    }
+ 
+}
+
+
+
+.login {
+    width: 27em;
+    height: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    position: relative;
+    z-index: 99;
+}
+
+.transition-body{
+  
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 50;
+}
+
+.paper{
+  padding: spacing(2);
+  text-align: center;
+  color: #f7b9ec;
+  background:  paleturquoise;
+}
+
+.navbar{
+  background-color: #8bcfe0;
+  padding: 30px;
+  box-shadow: 0px 0px 12px 2px rgba(148, 198, 218, 0.2);
+}
+.container {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(253, 208, 255);
+      box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+      border-radius: 4px;
+     
+      //transition: transform 200ms ease-in-out;
+    }
+.btn {
+    font-size: 21px;
+    padding: 5px 20px;
+    border: 0;
+    background-color: #cf78c1;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background-color: #f7b9ec;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .image{
+    border-radius: 100px;
+    &:hover {
+      background-color: #eaf9ff;
+    }
+    &:focus {
+      outline: none;
+    }
+
+  }
+  .fade-appear,
+  .fade-enter {
+      opacity: 0;
+      z-index: 1;
+  }
+  .fade-appear-active,
+  .fade-enter.fade-enter-active {
+      opacity: 1;
+      transition: opacity 300ms linear 150ms;
+  }
+  
+  .fade-exit {
+      opacity: 1;
+  }
+  
+  .fade-exit.fade-exit-active {
+      opacity: 0;
+      transition: opacity 150ms linear;
+  }
+  
